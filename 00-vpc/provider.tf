@@ -6,14 +6,12 @@ terraform {
     }
   }
     backend "s3" {
-    bucket         = "remote-state-aws-vpc-dev"
-    key            = "k8-terraform-vpc"
-    region         = "us-east-1"
-    encrypt        = true
+    bucket = "remote-state-jayashankar-dev"
+    key    = "k8-terraform-vpc"
+    region = "us-east-1"
+    encrypt = true
     use_lockfile = true
-    
-
-  }
+}
 }   
 
 provider "aws" {
