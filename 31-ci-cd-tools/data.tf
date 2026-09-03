@@ -1,4 +1,4 @@
-data "aws_ami" "amazon_linux" {
+data "aws_ami" "joindevops" {
   most_recent = true
 
   owners = ["973714476881"]
@@ -29,7 +29,7 @@ data "aws_ami" "sonarqube" {
 
     filter {
       name = "virtualization-type"
-      values = "hvm"
+      values = ["hvm"]
     }
 
     filter {
